@@ -1,0 +1,111 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+
+    background-image: url('assets/Logo.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0; right: 0; bottom: 0; left: 0;
+    background: rgba(0, 0, 0, 0.55); /
+    z-index: -1; 
+}
+
+.card {
+    background: rgba(30, 30, 30, 0.9); 
+    padding: 25px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 360px; 
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7); 
+    position: relative; 
+    backdrop-filter: blur(5px); 
+}
+
+h2 {
+    color: #00e676; 
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 13px;
+    color: #aaa; 
+    margin-top: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #ddd;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 2px solid #444; 
+    background: rgba(40, 40, 40, 0.8); 
+    color: white;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #00e676;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 25px;
+    border: none;
+    border-radius: 8px;
+    background: #00e676;
+    color: #121212;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform 0.1s, background 0.3s;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(45, 45, 45, 0.9);
+    border-left: 5px solid #00e676;
+}
+
+.hidden { display: none; }
+
+.detalhes {
+    font-size: 13px;
+    color: #bbb;
+    margin: 5px 0;
+}
+
+.alerta {
+    border-left-color: #ff5252 !important;
+}
